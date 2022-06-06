@@ -11,56 +11,91 @@
 		<link rel="stylesheet" href="dist/theme/black.css">
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="plugin/highlight/vs2015.min.css">
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-auto-animate>
-					<h3>Package Management in Linux</h3>
-					<small>It is the process of installing, uninstalling, updating packages.</small>
+				<section>
+					<section data-auto-animate>
+						<h3 style="color: mediumaquamarine">Package Management in Linux</h3>
+					</section>
+					<section data-auto-animate>
+						<h3 style="color: mediumaquamarine">Package Management in Linux</h3>
+						<small>It is the process of installing, uninstalling, updating packages.</small>
+					</section>
 				</section>
-
 
 				<section data-auto-animate>
 					<section data-auto-animate>
-						<h3>Packages</h3>
+						<img src="images/packages.png" height="220" alt="">
+						<h3 style="color: mediumaquamarine">Packages</h3>
+					</section>
+					<section data-auto-animate>
+						<h3 style="color: mediumaquamarine">Packages</h3>
 						<small>A 'package' refers to a compressed file archive containing all the files that come with a particular application.</small>
 					</section>
-
 				</section>
 
 				<section>
 					<section data-auto-animate>
-						<h3>Package Manager</h3>
+						<img src="images/package-management-flow-chart.png" height="250" alt="">
+						<h3 style="color: mediumaquamarine">Package Manager</h3>
+					</section>
+					<section data-auto-animate>
+						<h3 style="color: mediumaquamarine">Package Manager</h3>
 						<small>Automate the process of installing, upgrading and removing programs.</small>
 					</section>
 				</section>
+
+
 				<section>
 					<section>
-						<h3>Examples of package managers</h3>
+						<h4 style="color:yellowgreen;">Examples of package managers</h4>
 					</section>
-					<section><img src="https://www.shareicon.net/data/2015/09/16/101872_debian_512x512.png" height="200" alt=""><h2 style="color: #cc0066">Debian</h2><small>based linux distributions</small></section>
-					<section><h5>DPKG</h5><small>A low level package manager</small></section>
-					<section><h5>APT</h5><small>Advanced Package Tool</small></section>
-					<section><img src="https://wiki.installgentoo.com/images/f/f9/Arch-linux-logo.png" height="220" alt=""><h2 style="color: #1b91ff">Arch</h2><small>linux and it's derivatives</small></section>
-					<section><h5>PACMAN</h5><small>one of the major distinguishing features of Arch</small></section>
-					<section><h5>YAY</h5><small>wrapper around pacman</small></section>
+					<section>
+						<img src="images/Debian.png" height="200" alt="">
+						<h2 style="color: #cc0066">Debian</h2><small>based linux distributions</small>
+					</section>
+					<section>
+						<img src="images/DPKG.png" height="200" alt="">
+						<h5 style="color: mediumaquamarine">DPKG</h5><small>A low level package manager</small>
+					</section>
+					<section>
+						<h5 style="color: mediumaquamarine">APT</h5><small>Advanced Package Tool</small>
+					</section>
+					<section>
+						<img src="images/Arch-linux-logo.png" height="220" alt="">
+						<h2 style="color: #1b91ff">Arch</h2><small>linux and it's derivatives</small>
+					</section>
+					<section>
+						<img src="images/pacman-image.png" height="200" alt="">
+						<h5 style="color: mediumaquamarine">PACMAN</h5><small>one of the major distinguishing features of Arch</small>
+					</section>
+					<section>
+						<h5 style="color: mediumaquamarine">YAY</h5><small>wrapper around pacman</small>
+					</section>
 				</section>
 
-				<section>PACMAN</section>
-
-				<section><h3>MAKEPKG</h3></section>
-				
 				<section>
-					<h3>PKGBUILD</h3>
+					<h3 style="color: mediumaquamarine">PACMAN</h3>
 				</section>
+
+				<section>
+					<h3 style="color: mediumaquamarine">MAKEPKG</h3>
+				</section>
+
+				<section>
+					<h3 style="color: mediumaquamarine">PKGBUILD</h3>
+				</section>
+
+
 				<section>
 					<h3>Example PKGBUILD file</h3>
-				<pre> <code data-line-numbers="1|2|3|4|5|6|7|8|9|10|11|12|14-16|18-23"> # Maintainer: Ayush Biswas biswas.ayush03@kgpian.iitkgp.ac.in
-pkgname=guessing-game-git
-pkgver=1.1
-pkgrel=1
+				<pre> <code data-line-numbers="1|2|3|4|5|6|7|8|9|10|11|12|14-16|18-23" style="font-size: 18px"> # Maintainer: Ayush Biswas biswas.ayush03@kgpian.iitkgp.ac.in
+pkgname=guessing-game-git # Name of the package
+pkgver=1.1 # current version of package
+pkgrel=1  #
 pkgdesc="A cool, lightweight and open source guessing game in the terminal."
 arch=(any)
 url="https://github.com/Ayush0-8Biswas/guessing-game.git"
